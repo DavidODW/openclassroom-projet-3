@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin-top: 0; /*margin top pour pouvoir coller les lien de navigation en haut de l''écran*/
 }
 
 :root {
@@ -20,7 +21,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1440px; /*affichage pour les ecrans larges*/
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -120,33 +121,36 @@ body {
 /* creation des class pour les flex box*/
 .header_flex{
     display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    max-width: 1440px;
-    margin: auto;
-
+    justify-content:space-between; /*mise en place d'un espace entre les élements de la flex box header*/
+    flex-direction: row; /* mise en ligne des éléments de la flexbox*/
+    padding-bottom: 40px; /*mise d'un espace sous le header*/
     
 }
+/* flex box du logo avec adaptation de la taille pour correspondre à la maquette*/
 .logo_flex{
-    width: 61.1;
+    width: 61.1px;
     height: 19px;
     display: flex;
-    justify-content: flex-start;
-    padding-top: 40px;
+    justify-content: flex-start; /* alignement à gauche de l'écran*/
+    padding-top: 40px; /* descente du logo par rapport au haut de la page*/
     
 
 
 }
+
 .nav_flex{
     display: flex;
-    list-style-type: none;
-    justify-content: flex-end;
+    list-style-type: none; /* retrait des puce de la liste utilisé pour les les boutons de navigation*/
+    justify-content: flex-end; /*alignement de la flex box nav_flex à droite*/
+    
 
+    
 
 }
 .active_nav{
-    padding: 10px;
+    padding: 10px;/*mise en place d'une séparation entre les éléments de la liste utilisé pour les liens de navigation*/
 }
+/*création de la barre bleu et changement de la couleur du texte dulien de navigation sur un clic */
 .active_nav:active{
     border-top: 3px #0065FC solid;
 
@@ -196,4 +200,33 @@ body {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .header_flex{
+        flex-direction: column; /* passage de l'alignement horizontal à vertical en dessous de 768px*/
+    } 
+
+
+    .logo_flex{
+
+        height: 50px; /*agrandissement du logo*/
+        margin: auto; /* centrage du logo*/
+        justify-content: center;/* centrage du logo*/
+        padding-top: 40px;/* espace entre le haut de la page et le logo*/
+        padding-bottom: 40px; /* espace entre le logo et les lien de navigation*/
+    
+    
+    }
+/* ecartement et centrage des bouton de navigation*/
+    .active_nav{  
+        justify-content:center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .active_nav:active{  
+        border-top: none;/*fait disparaitre le trait bleu au dessus au clic*/
+        border-bottom: 3px #0065FC solid;/*le remplace par un trait bleu au dessous au clic*/
+
+    }
 }
