@@ -27,7 +27,8 @@ body {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+     /*font-size: 22px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+    font-size: 1.5em;
 }
 
 .card {
@@ -42,7 +43,8 @@ body {
 }
 
 .card-title {
-    font-size: 16px;
+     /*font-size: 16px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+    font-size: 1em;
 }
 
 .euro {
@@ -115,9 +117,42 @@ body {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* creation des class pour les flex box*/
+.header_flex{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: auto;
+
+    
+}
+.logo_flex{
+    width: 61.1;
+    height: 19px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+    
 
 
+}
+.nav_flex{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
 
+
+}
+.active_nav{
+    padding: 10px;
+}
+.active_nav:active{
+    border-top: 3px #0065FC solid;
+
+    color:#0065FC;
+
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -148,11 +183,13 @@ body {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        /*font-size: 14px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+        font-size: 0.8em;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        /*font-size: 13px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+        font-size: 0.7em;
     }
 }
 
