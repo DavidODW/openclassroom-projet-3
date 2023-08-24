@@ -1,12 +1,15 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin-top: 0; /*margin top pour pouvoir coller les lien de navigation en haut de l''écran*/
 }
 
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+
+    ;
 }
 
 .fa-solid {
@@ -20,14 +23,15 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1440px; /*affichage pour les ecrans larges*/
     padding: 0 50px;
     box-sizing: border-box;
 }
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+     /*font-size: 22px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+    font-size: 1.375rem;
 }
 
 .card {
@@ -42,7 +46,8 @@ body {
 }
 
 .card-title {
-    font-size: 16px;
+     /*font-size: 16px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+    font-size: 1rem;
 }
 
 .euro {
@@ -115,10 +120,49 @@ body {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* creation des class pour les flex box*/
+.header_flex{
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content:space-between; /*mise en place d'un espace entre les élements de la flex box header*/
+    flex-direction: row; /* mise en ligne des éléments de la flexbox*/
+    padding-bottom: 2.5rem; /*mise d'un espace sous le header*/
+    
+}
+/* flex box du logo avec adaptation de la taille pour correspondre à la maquette*/
+.logo_flex{
+    height: 1.188rem;
+    display: flex;
+    justify-content: flex-start; /* alignement à gauche de l'écran*/
+    padding-top: 2.5rem; /* descente du logo par rapport au haut de la page*/
+    
 
 
+}
 
+.nav_flex{
+    display: flex;
+    list-style-type: none; /* retrait des puce de la liste utilisé pour les les boutons de navigation*/
+    padding-left: 0rem; /*suppresion de l'écart entre le bord de la liste et de ses éléments*/
 
+    
+
+}
+.active_nav{
+    padding: 0.625rem;/*mise en place d'une séparation entre les éléments de la liste utilisé pour les liens de navigation*/
+}
+/*création de la barre bleu et changement de la couleur du texte du lien de navigation sur un clic */
+.active_nav:hover{
+    border-top: 3px var(--main-color) solid;
+
+    
+
+}
+.active_nav:active{
+    color:var(--main-color);
+
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -148,15 +192,45 @@ body {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        /*font-size: 14px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+        font-size: 0.875rem;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        /*font-size: 13px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
+        font-size: 0.813rem;
     }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .header_flex{
+        flex-direction: column; /* passage de l'alignement horizontal à vertical en dessous de 768px*/
+    } 
+
+
+    .logo_flex{
+        height: 3.125rem; /*agrandissement du logo*/
+        margin: auto; /* centrage du logo*/
+        justify-content: center;/* centrage du logo*/
+        padding-bottom: 2.5rem; /* espace entre le logo et les lien de navigation*/
+    
+    
+    }
+/* ecartement et centrage des bouton de navigation*/
+    .active_nav{ 
+
+        justify-content:center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .active_nav:hover{  
+        border-top: none;/*fait disparaitre le trait bleu au dessus au clic*/
+        border-bottom: 3px var(--main-color) solid;/*le remplace par un trait bleu au dessous au clic*/
+
+    }
 }
