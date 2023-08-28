@@ -26,8 +26,8 @@
                 <!--conteneur lien de navigation-->
                 <nav>
                     <ul class="nav_flex">
-                        <li href="#hebergements" class="active_nav">Hébergements</li>
-                        <li href="#activites"  class="active_nav">Activités</li>
+                        <li  class="active_nav"></a>Hébergements</a></li>
+                        <li href="#activites"  class="active_nav"><a href="#activites">Activités</a></li>
                     </ul>
                 </nav>
         </header>
@@ -67,12 +67,12 @@
             </div>
             <div class="hebergements-and-populaires">
                 <!--section hebergement-->
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
-                        
+
                         <a href="#">
                                 <article class="card mise-en-forme-hebergement-card">
                                     <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -195,7 +195,7 @@
                     </div>
                     <!-- ajout du lien afficher plus -->
                     <div>
-                        <a href="#"> <h2>Afficher plus</a>
+                        <a href="#"> <h3>Afficher plus</h3></a>
                     </div>  
                 </section>
                 <section class="populaires">
@@ -268,6 +268,53 @@
                     </div>
                 </section>
             </div>
+            <section id="activites" class="activites" >
+                <div class="activites-title">
+                    <h2 class="section-title">Activités à Marseille</h2>
+                </div>
+                <div class="activites-cards">
+                    <a href="#">
+                        <article class="card activites-card-template">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port de Marseille">
+                            <div>
+                                <div class="activites-content">
+                                    <h3 class="card-title">Vieux Port</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card activites-card-template">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du fort de Pomégues">
+                            <div>
+                                <div class="activites-content">
+                                    <h3 class="card-title">Fort de Pomègues</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card activites-card-template">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+                            <div>
+                                <div class="activites-content">
+                                    <h3 class="card-title">Parc National des Calanques</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card activites-card-template">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+                            <div>
+                                <div class="activites-content">
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>

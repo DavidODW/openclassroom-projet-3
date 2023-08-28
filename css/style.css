@@ -308,7 +308,45 @@ a{
 
 }
 
+/*conteneur des cartes de la section activites*/
+.activites{
+    width: 100%;
 
+}
+.activites-title{
+margin:33px;
+}
+
+.activites-cards{
+    height: 439px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding-left: 33px;
+ 
+
+}
+.activites-card-template{
+    width: 18.594rem;/*force le maintien de la taille des cartes à 297px (maquette) */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+.activites-content{
+    padding:20px 19px 20px 19px;
+}
+.activites-card-template img{
+    width: 100%;
+    height: 380px;
+    max-height: 360px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius:  20px; /*arrondissement du coin haut gauche*/
+    border-top-right-radius: 20px; /*arrondissement du coin haut droit*/
+}
 
 
 
