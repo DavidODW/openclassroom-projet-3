@@ -318,11 +318,11 @@ a{
 .activites-cards{
 
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 1rem;
     box-sizing: border-box;
     padding-left: 33px;
-    
+    padding-right: 33px;
 }
 .activites-card-template{
     width: 18.594rem;/*force le maintien de la taille des cartes à 297px (maquette) */
@@ -358,6 +358,7 @@ a{
 
 
 .footer-list {
+    width: 100%;
     display: flex;
     list-style-type: none;
     flex-direction: column;
@@ -393,7 +394,7 @@ a{
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cards .card-content .card {
         width: 30%;
     }
 
@@ -406,6 +407,10 @@ a{
         /*font-size: 13px; changement de px à em pour que la police s'adapte à l'écran (valeur relative)*/
         font-size: 0.813rem;
     }
+    .activites-cards{
+        justify-content: center;
+    }
+
 
 }
 
@@ -478,5 +483,15 @@ a{
     position: relative;
     top: 200px;
 }
+/*footer reorientation*/
+.footer-conteneur{
+    width: 33%;
+    flex-direction: column;
 
+}
+.footer-list {
+    width: 100%;
+
+    padding-right: 0rem;
+}
 }
