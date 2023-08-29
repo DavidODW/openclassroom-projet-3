@@ -358,6 +358,7 @@ a{
 
 
 .footer-list {
+    width: 100%;
     display: flex;
     list-style-type: none;
     flex-direction: column;
@@ -393,7 +394,7 @@ a{
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cards .card-content .card {
         width: 30%;
     }
 
@@ -409,6 +410,8 @@ a{
     .activites-cards{
         justify-content: center;
     }
+
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -480,5 +483,15 @@ a{
     position: relative;
     top: 200px;
 }
+/*footer reorientation*/
+.footer-conteneur{
+    width: 33%;
+    flex-direction: column;
 
+}
+.footer-list {
+    width: 100%;
+
+    padding-right: 0rem;
+}
 }
