@@ -224,6 +224,11 @@ input::placeholder {
     font-weight: 700;
 }
 /* mise en forme de la partie filtre*/
+.filtre_conteneur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .filtre_group{
     height: 50px; /*definition de la hauteur du filtre*/
     display: flex;
@@ -235,20 +240,21 @@ input::placeholder {
 }
 .filtre_titre{
 
-    padding-top: 10px; /*decalage du titre par rapport au haut de la barre des filtres*/
+    margin-top: 20px; /*decalage du titre par rapport au haut de la barre des filtres*/
+    padding-right:15px ;
 }
 .filtre_button{
     display: flex;
     border: 2px var(--main-bg-color) solid ;
     padding: 4px 19px 4px 19px; /*espacement autour du contenu des boutons de filtres*/
     border-radius: 25px; /*arrondissement des bords*/
-    gap: 10px; /*écartement entre les éléments du bouton*/
     align-items: center;
     font-size: 1rem;
     font-weight: 700;
 
 }
 /* changement de la couleur au survol*/
+
 .filtre_button:hover{
     background-color: #DEEBFF;
     
@@ -262,9 +268,7 @@ input::placeholder {
     
     
 }
-.bandeau_info_texte{
-    padding: auto;
-}
+
 .bandeau_info_icone{
     width: 10px;
     height: 10px;
@@ -445,7 +449,7 @@ a{
         justify-content:center;
         align-items: center;
         margin: auto;
-        gap: 15 px;
+        gap: 15px;
     }
 
     .active_nav:hover{  
@@ -503,4 +507,5 @@ a{
 
     padding-right: 0rem;
 }
+
 }

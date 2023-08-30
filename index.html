@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--lien vers le kit sur font awesome pour intégrer les icones-->
     <script src="https://kit.fontawesome.com/efeaf2e87c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
@@ -36,10 +34,10 @@
             <!--conteneur du formulaire-->
             <div class="formulaire_box">
                 <div class="formulaire_title">
-                    <h2> Trouvez Votre HéberGement pour des Vacances de réve</h2>
+                    <h2> Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p> En plein centre-ville ou en pleine nature</p>
                 </div>
-                <form method="get" action=""> <!--action reste vide car ont reste sur la page-->
+                <form method="get" action="get"> <!--action reste vide car ont reste sur la page-->
                     <div class="formulaire_adresse">
                         <div class="formulaire_icone">
                             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
@@ -52,13 +50,15 @@
                     </div>
 
                 </form>
-                <ul class="filtre_group">
+                <div class="filtre_conteneur">
                     <h3 class="filtre_titre">Filtres</h3>
-                    <li href="#"  class="filtre_button"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>Économique</li>
-                    <li href="#"  class="filtre_button"><i class="fa-solid fa-person" style="color: #0065FC;"></i>Familial</li>
-                    <li href="#"  class="filtre_button"><i class="fa-solid fa-heart" style="color: #0065FC;"></i>Romantique</li>
-                    <li href="#"  class="filtre_button"><i class="fa-solid fa-fire" style="color: #0065FC;"></i>Nos pépites</li>
-                </ul>
+                    <ul class="filtre_group">
+                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i> Économique</a></li>
+                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-person" style="color: #0065FC;"></i> Familial</a></li>
+                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-heart" style="color: #0065FC;"></i> Romantique</a></li>
+                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-fire" style="color: #0065FC;"></i> Nos pépites</a></li>
+                    </ul>
+                </div>
 
             </div>
             <div class="bandeau_info">
@@ -201,7 +201,7 @@
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" style="color: #0065FC; "aria-hidden="true" ></i>
+                        <i class="fa-solid fa-chart-line" style="color: #0065FC" aria-hidden="true" ></i>
                     </div>
                     <div class="populaires-cards">
 
