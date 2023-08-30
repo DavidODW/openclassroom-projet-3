@@ -32,49 +32,47 @@
 
         <main>
             <!--conteneur du formulaire-->
-            <div class="formulaire_box">
-                <div class="formulaire_title">
+            <div class="form-box">
+                <div class="form-title">
                     <h2> Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p> En plein centre-ville ou en pleine nature</p>
                 </div>
                 <form method="get" action="get"> <!--action reste vide car ont reste sur la page-->
-                    <div class="formulaire_adresse">
-                        <div class="formulaire_icone">
+                    <div class="form-adresse">
+                        <div class="form-icon">
                             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                         </div>
-                        <input type="text" class="formulaire_input formulaire_text" name="adresse" placeholder="Marseille,france">
-                        <!--deux bouton un pour grand ecran avec le texte rechercher et un petit avec l'icone de loupe-->
-                        <button type="button" class="formulaire_button_large formulaire_text "> Rechercher </button>
-                        <button type="button" class="formulaire_button_small formulaire_text "> <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </button>
+                        <input type="text" class="form-input form-text" name="adresse" placeholder="Marseille,france">
+                        <button type="button" class="form-button_large form-text "> Rechercher </button>              
 
                     </div>
 
                 </form>
-                <div class="filtre_conteneur">
-                    <h3 class="filtre_titre">Filtres</h3>
-                    <ul class="filtre_group">
-                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i> Économique</a></li>
-                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-person" style="color: #0065FC;"></i> Familial</a></li>
-                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-heart" style="color: #0065FC;"></i> Romantique</a></li>
-                        <li class="filtre_button"><a href="#"><i class="fa-solid fa-fire" style="color: #0065FC;"></i> Nos pépites</a></li>
+                <div class="filter-container">
+                    <h3 class="filter-title">Filtres</h3>
+                    <ul class="filter-group">
+                        <li class="filter-button"><a href="#"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i> Économique</a></li>
+                        <li class="filter-button"><a href="#"><i class="fa-solid fa-person" style="color: #0065FC;"></i> Familial</a></li>
+                        <li class="filter-button"><a href="#"><i class="fa-solid fa-heart" style="color: #0065FC;"></i> Romantique</a></li>
+                        <li class="filter-button"><a href="#"><i class="fa-solid fa-fire" style="color: #0065FC;"></i> Nos pépites</a></li>
                     </ul>
                 </div>
 
             </div>
-            <div class="bandeau_info">
-                <i class="fas fa-info bandeau_info_icone" style="color: #0065FC;"></i>
-                <p class="bandeau_info_texte">Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="banner-info">
+                <i class="fas fa-info banner-info-icon" style="color: #0065FC;"></i>
+                <p class="banner-info-text">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
             <div class="hebergements-and-populaires">
                 <!--section hebergement-->
-                <section id="hebergements" class="hebergements">
-                    <div class="hebergements-title">
+                <section id="hebergements" class="accommodation">
+                    <div class="accommodation-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
-                    <div class="hebergements-cards">
+                    <div class="accommodation-cards">
 
                         <a href="#">
-                                <article class="card">
+                                <article class="card accommodation-layout">
                                     <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -94,7 +92,7 @@
                         </a>
 
                         <a href="#">
-                                <article class="card">
+                                <article class="card accommodation-layout">
                                     <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -114,7 +112,7 @@
                         </a>
 
                         <a href="#">
-                                <article class="card">
+                                <article class="card accommodation-layout">
                                     <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -134,7 +132,7 @@
                         </a>
 
                         <a href="#">
-                                <article class="card">
+                                <article class="card accommodation-layout">
                                     <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -154,7 +152,7 @@
                         </a>
 
                         <a href="#">
-                                <article class="card">
+                                <article class="card accommodation-layout">
                                     <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -174,7 +172,7 @@
                         </a>
 
                         <a href="#">
-                                <article class="card">
+                                <article class="card accommodation-layout">
                                     <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -268,46 +266,46 @@
                     </div>
                 </section>
             </div>
-            <section id="activites" class="activites" >
-                <div class="activites-title">
+            <section id="activites" class="activity" >
+                <div class="activity-title">
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
-                <div class="activites-cards">
+                <div class="activity-cards">
                     <a href="#">
-                        <article class="card activites-card-template">
+                        <article class="card activity-card-template">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port de Marseille">
                             <div>
-                                <div class="activites-content">
+                                <div class="activity-content">
                                     <h3 class="card-title">Vieux Port</h3>
                                 </div>
                             </div>
                         </article>
                     </a>
                     <a href="#">
-                        <article class="card activites-card-template">
+                        <article class="card activity-card-template">
                             <img src="./images/activites/paul-hermann.jpg" alt="Image du fort de Pomégues">
                             <div>
-                                <div class="activites-content">
+                                <div class="activity-content">
                                     <h3 class="card-title">Fort de Pomègues</h3>
                                 </div>
                             </div>
                         </article>
                     </a>
                     <a href="#">
-                        <article class="card activites-card-template">
+                        <article class="card activity-card-template">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
                             <div>
-                                <div class="activites-content">
+                                <div class="activity-content">
                                     <h3 class="card-title">Parc National des Calanques</h3>
                                 </div>
                             </div>
                         </article>
                     </a>
                     <a href="#">
-                        <article class="card activites-card-template">
+                        <article class="card activity-card-template">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
                             <div>
-                                <div class="activites-content">
+                                <div class="activity-content">
                                     <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                                 </div>
                             </div>
@@ -317,7 +315,7 @@
             </section>
         </main>
         <!--footer : création de 3 colonnes de taille égale-->
-        <footer class="footer-conteneur">
+        <footer class="footer-container">
             <div >
                 <div class="footer-column">
                     <h3>À propos</h3>
