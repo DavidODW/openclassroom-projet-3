@@ -29,6 +29,7 @@ body {
     min-width: 1025px;
     padding: 0 50px;
     box-sizing: border-box;
+    overflow: hidden;
 
 }
 
@@ -291,10 +292,7 @@ a{
 }
 
 .accommodation-cards .card {
-    display: flex;
-    flex-direction: column; /*passage du contenu des cartes en colonne à la place de ligne*/
-    margin:15px;
-    box-sizing: border-box;
+    margin:1%;
     width: 28%;
 }
 
