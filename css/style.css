@@ -290,11 +290,14 @@ a{
     padding-left: 15px;
 
 }
-.accommodation-cards .card {
-    width: 29%;
-    margin-bottom: 22px;
-}
 
+.accommodation-cards a {
+    width: 29%;
+    margin-bottom: 40px;
+}
+.accommodation-cards .card {
+    height: 100%;
+}
 .hebergements-and-populaires .accommodation{
     padding-left: 10px;
     padding-right: 10px;
@@ -320,7 +323,7 @@ a{
     padding-bottom: 20px;
     flex-flow: row wrap;
     justify-content: space-around;
-    
+    box-sizing: border-box;
 
 }
 
@@ -334,15 +337,23 @@ a{
     margin:33px;
 }
 
-.activity-cards{
+.activity-cards a{
+    width: 33%;
 
+
+}
+
+.activity-cards.card {
+    height: 100%;
+}
+.activity-cards{
     display: flex;
     padding-left: 33px;
     padding-right: 33px;
 
 }
 .activity-card-template{
-    width: 33%;
+
     display: flex;
     margin:10px;
     flex-direction: column;
@@ -351,7 +362,7 @@ a{
 
 }
 .activity-content{
-    padding:20px 19px 20px 19px;
+    padding:20px 19px 0px 19px;
 }
 .activity-card-template img{
     width: 100%;
@@ -394,6 +405,11 @@ a{
 tablette/mobile seront mises en place ultérieurement (ce n’est pas attendu dans cette
 première version du site). */
 @media (max-width: 1024px) {
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
